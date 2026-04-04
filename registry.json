@@ -1,5 +1,72 @@
 {
   "$schema": "./schema.json",
   "version": 1,
-  "plugins": []
+  "plugins": [
+    {
+      "name": "hash",
+      "description": "Hash, encode & decode text (base64, URL, hex)",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "hh",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/hash",
+      "permissions": [],
+      "tags": ["utility", "encoding"]
+    },
+    {
+      "name": "notes",
+      "description": "Quick notes — save and search text snippets",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "qn",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/notes",
+      "permissions": [],
+      "tags": ["productivity", "notes"]
+    },
+    {
+      "name": "sysinfo",
+      "description": "System info: RAM, disk, IP, processes, uptime",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "sys",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/sysinfo",
+      "permissions": ["exec"],
+      "tags": ["utility", "system"]
+    },
+    {
+      "name": "define",
+      "description": "Dictionary — look up English word definitions",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "df",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/define",
+      "permissions": ["http"],
+      "tags": ["reference", "dictionary"]
+    },
+    {
+      "name": "timer",
+      "description": "Timers and stopwatches — track time without leaving the launcher",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "tm",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/timer",
+      "permissions": [],
+      "tags": ["productivity", "time"]
+    },
+    {
+      "name": "uuid",
+      "description": "Generate UUIDs, random hex, and base64 strings",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "uu",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/uuid",
+      "permissions": [],
+      "tags": ["utility", "generator"]
+    }
+  ]
 }

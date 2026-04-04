@@ -1,0 +1,7 @@
+[plugin]
+name = "hash"
+version = "1.0.0"
+description = "Hash, encode & decode text (base64, URL, hex)"
+author = "voltic"
+prefix = "hh"
+entry = "init.lua"

@@ -1,0 +1,10 @@
+[plugin]
+name = "sysinfo"
+version = "1.0.0"
+description = "System info: RAM, disk, IP, processes, uptime"
+author = "voltic"
+prefix = "sys"
+entry = "init.lua"
+
+[permissions]
+exec = true

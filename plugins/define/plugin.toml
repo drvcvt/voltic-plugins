@@ -1,0 +1,10 @@
+[plugin]
+name = "define"
+version = "1.0.0"
+description = "Dictionary — look up English word definitions"
+author = "voltic"
+prefix = "df"
+entry = "init.lua"
+
+[permissions]
+http = ["api.dictionaryapi.dev"]

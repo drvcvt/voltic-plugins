@@ -39,6 +39,10 @@
             "format": "uri",
             "description": "Git clone URL"
           },
+          "path": {
+            "type": "string",
+            "description": "Subdirectory within the repo containing the plugin (e.g. plugins/hash)"
+          },
           "permissions": {
             "type": "array",
             "items": {

@@ -1,0 +1,7 @@
+[plugin]
+name = "uuid"
+version = "1.0.0"
+description = "Generate UUIDs, random hex, and base64 strings"
+author = "voltic"
+prefix = "uu"
+entry = "init.lua"

@@ -1,0 +1,7 @@
+[plugin]
+name = "notes"
+version = "1.0.0"
+description = "Quick notes — save and search text snippets"
+author = "voltic"
+prefix = "qn"
+entry = "init.lua"

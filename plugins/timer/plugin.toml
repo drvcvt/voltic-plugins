@@ -1,0 +1,7 @@
+[plugin]
+name = "timer"
+version = "1.0.0"
+description = "Timers and stopwatches — track time without leaving the launcher"
+author = "voltic"
+prefix = "tm"
+entry = "init.lua"
