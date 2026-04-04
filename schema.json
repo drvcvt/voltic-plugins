@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["version", "plugins"],
+  "properties": {
+    "version": {
+      "type": "integer",
+      "description": "Registry format version"
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "author", "version", "prefix", "repo"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Plugin name (lowercase, hyphens only)"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 120
+          },
+          "author": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          },
+          "prefix": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Search prefix (2+ chars, no builtin prefix collision)"
+          },
+          "repo": {
+            "type": "string",
+            "format": "uri",
+            "description": "Git clone URL"
+          },
+          "permissions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["http", "fs", "clipboard", "exec"]
+            },
+            "default": []
+          },
+          "min_voltic": {
+            "type": "string",
+            "description": "Minimum Voltic version required"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": []
+          }
+        }
+      }
+    }
+  }
+}
