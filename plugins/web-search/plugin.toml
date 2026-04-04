@@ -1,0 +1,7 @@
+[plugin]
+name = "web-search"
+version = "1.0.0"
+description = "Search the web with configurable engines"
+author = "voltic"
+prefix = "ws"
+entry = "init.lua"

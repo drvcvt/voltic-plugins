@@ -1,0 +1,11 @@
+[plugin]
+name = "ip"
+version = "1.0.0"
+description = "Show public IP, local IP, and network info"
+author = "voltic"
+prefix = "ip"
+entry = "init.lua"
+
+[permissions]
+http = ["api.ipify.org", "ipinfo.io"]
+exec = true

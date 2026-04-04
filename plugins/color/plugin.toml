@@ -1,0 +1,7 @@
+[plugin]
+name = "color"
+version = "1.0.0"
+description = "Convert colors between hex, RGB, and HSL"
+author = "voltic"
+prefix = "co"
+entry = "init.lua"

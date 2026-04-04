@@ -67,6 +67,39 @@
       "path": "plugins/uuid",
       "permissions": [],
       "tags": ["utility", "generator"]
+    },
+    {
+      "name": "web-search",
+      "description": "Search the web with configurable engines",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "ws",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/web-search",
+      "permissions": [],
+      "tags": ["search", "web"]
+    },
+    {
+      "name": "color",
+      "description": "Convert colors between hex, RGB, and HSL",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "co",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/color",
+      "permissions": [],
+      "tags": ["utility", "design"]
+    },
+    {
+      "name": "ip",
+      "description": "Show public IP, local IP, and network info",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "ip",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/ip",
+      "permissions": ["http", "exec"],
+      "tags": ["utility", "network"]
     }
   ]
 }
