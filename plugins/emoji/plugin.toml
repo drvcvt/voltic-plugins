@@ -1,0 +1,7 @@
+[plugin]
+name = "emoji"
+version = "1.0.0"
+description = "Search and copy emojis by name or keyword"
+author = "voltic"
+prefix = "em"
+entry = "init.lua"

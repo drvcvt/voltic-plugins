@@ -1,0 +1,7 @@
+[plugin]
+name = "unit"
+version = "1.0.0"
+description = "Unit converter: length, weight, temperature, data, time"
+author = "voltic"
+prefix = "un"
+entry = "init.lua"

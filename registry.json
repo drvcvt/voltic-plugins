@@ -155,6 +155,50 @@
       "path": "plugins/port",
       "permissions": ["exec"],
       "tags": ["utility", "network", "developer"]
+    },
+    {
+      "name": "unit",
+      "description": "Unit converter: length, weight, temperature, data, time",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "un",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/unit",
+      "permissions": [],
+      "tags": ["utility", "converter"]
+    },
+    {
+      "name": "regex",
+      "description": "Test regex patterns against text using Lua patterns",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "re",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/regex",
+      "permissions": [],
+      "tags": ["utility", "developer"]
+    },
+    {
+      "name": "base",
+      "description": "Convert numbers between binary, octal, decimal, and hex",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "b2",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/base",
+      "permissions": [],
+      "tags": ["utility", "developer", "converter"]
+    },
+    {
+      "name": "emoji",
+      "description": "Search and copy emojis by name or keyword",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "em",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/emoji",
+      "permissions": [],
+      "tags": ["productivity", "text"]
     }
   ]
 }

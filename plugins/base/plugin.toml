@@ -1,0 +1,7 @@
+[plugin]
+name = "base"
+version = "1.0.0"
+description = "Convert numbers between binary, octal, decimal, and hex"
+author = "voltic"
+prefix = "b2"
+entry = "init.lua"

@@ -1,0 +1,7 @@
+[plugin]
+name = "regex"
+version = "1.0.0"
+description = "Test regex patterns against text using Lua patterns"
+author = "voltic"
+prefix = "re"
+entry = "init.lua"
