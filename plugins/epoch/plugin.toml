@@ -1,0 +1,10 @@
+[plugin]
+name = "epoch"
+version = "1.0.0"
+description = "Convert between Unix timestamps and human-readable dates"
+author = "voltic"
+prefix = "ep"
+entry = "init.lua"
+
+[permissions]
+exec = true

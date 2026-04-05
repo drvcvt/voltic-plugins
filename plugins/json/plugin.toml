@@ -1,0 +1,7 @@
+[plugin]
+name = "json"
+version = "1.0.0"
+description = "Format, minify, and validate JSON"
+author = "voltic"
+prefix = "jf"
+entry = "init.lua"

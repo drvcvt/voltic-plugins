@@ -1,0 +1,10 @@
+[plugin]
+name = "proc"
+version = "1.0.0"
+description = "Search and kill running processes"
+author = "voltic"
+prefix = "pk"
+entry = "init.lua"
+
+[permissions]
+exec = true

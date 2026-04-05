@@ -1,0 +1,7 @@
+[plugin]
+name = "pass"
+version = "1.0.0"
+description = "Generate secure passwords and passphrases"
+author = "voltic"
+prefix = "pw"
+entry = "init.lua"

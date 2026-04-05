@@ -1,0 +1,10 @@
+[plugin]
+name = "port"
+version = "1.0.0"
+description = "Show listening ports and their processes"
+author = "voltic"
+prefix = "pt"
+entry = "init.lua"
+
+[permissions]
+exec = true

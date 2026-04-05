@@ -100,6 +100,61 @@
       "path": "plugins/ip",
       "permissions": ["http", "exec"],
       "tags": ["utility", "network"]
+    },
+    {
+      "name": "epoch",
+      "description": "Convert between Unix timestamps and human-readable dates",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "ep",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/epoch",
+      "permissions": ["exec"],
+      "tags": ["utility", "time", "developer"]
+    },
+    {
+      "name": "json",
+      "description": "Format, minify, and validate JSON",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "jf",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/json",
+      "permissions": [],
+      "tags": ["utility", "developer", "formatter"]
+    },
+    {
+      "name": "pass",
+      "description": "Generate secure passwords and passphrases",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "pw",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/pass",
+      "permissions": [],
+      "tags": ["utility", "security"]
+    },
+    {
+      "name": "proc",
+      "description": "Search and kill running processes",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "pk",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/proc",
+      "permissions": ["exec"],
+      "tags": ["utility", "system"]
+    },
+    {
+      "name": "port",
+      "description": "Show listening ports and their processes",
+      "author": "voltic",
+      "version": "1.0.0",
+      "prefix": "pt",
+      "repo": "https://github.com/drvcvt/voltic-plugins",
+      "path": "plugins/port",
+      "permissions": ["exec"],
+      "tags": ["utility", "network", "developer"]
     }
   ]
 }
