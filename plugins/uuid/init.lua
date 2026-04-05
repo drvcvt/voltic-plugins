@@ -6,19 +6,15 @@ voltic.register({
     description = "UUID & random string generator",
 })
 
--- Seed the RNG. We don't have os.time(), but math.randomseed accepts any number.
--- Use a combination of collectgarbage-less heuristics: tostring of tables produces
--- unique addresses, which we can hash into a seed.
+-- Seed RNG: use string hashing since tostring({}) format varies in sandbox
 local function seed_rng()
-    local t = {}
-    local addr = tostring(t):match("0x(%x+)")
-    local seed = tonumber(addr, 16) or 12345
-    -- Mix in a second allocation for more entropy
-    local t2 = {}
-    local addr2 = tostring(t2):match("0x(%x+)")
-    seed = seed + (tonumber(addr2, 16) or 67890)
+    local seed = 0
+    local s = tostring({}) .. tostring({}) .. tostring(math.huge)
+    for i = 1, #s do
+        seed = (seed * 31 + s:byte(i)) % 2147483647
+    end
+    if seed == 0 then seed = 12345 end
     math.randomseed(seed)
-    -- Burn a few values to improve distribution
     for _ = 1, 10 do math.random() end
 end
 

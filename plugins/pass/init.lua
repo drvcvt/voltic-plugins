@@ -6,12 +6,15 @@ voltic.register({
     description = "Password generator",
 })
 
--- Seed RNG from table addresses
+-- Seed RNG: use string hashing since tostring({}) format varies in sandbox
 local function seed_rng()
-    local t1, t2 = {}, {}
-    local a1 = tonumber(tostring(t1):match("0x(%x+)"), 16) or 12345
-    local a2 = tonumber(tostring(t2):match("0x(%x+)"), 16) or 67890
-    math.randomseed(a1 + a2)
+    local seed = 0
+    local s = tostring({}) .. tostring({}) .. tostring(math.huge)
+    for i = 1, #s do
+        seed = (seed * 31 + s:byte(i)) % 2147483647
+    end
+    if seed == 0 then seed = 12345 end
+    math.randomseed(seed)
     for _ = 1, 10 do math.random() end
 end
 
