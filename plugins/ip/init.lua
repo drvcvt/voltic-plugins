@@ -45,8 +45,15 @@ local function get_local_ip()
     local cached = voltic.cache.get("ip:local")
     if cached then return cached end
 
-    local raw = voltic.exec('powershell -Command "(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.InterfaceAlias -notmatch \'Loopback\' -and $_.IPAddress -ne \'127.0.0.1\' } | Select-Object -First 1).IPAddress"')
-    local ip = trim(raw)
+    local raw = voltic.exec('powershell -NoProfile -Command "$a=(Get-NetIPAddress -AddressFamily IPv4|?{$_.InterfaceAlias -notmatch \'Loopback\' -and $_.IPAddress -ne \'127.0.0.1\'}|Select -First 1).IPAddress;Write-Host $a"')
+    -- Extract just the IP from output (last line that looks like an IP)
+    local ip = nil
+    for line in raw:gmatch("[^\r\n]+") do
+        local candidate = trim(line)
+        if candidate:match("^%d+%.%d+%.%d+%.%d+$") then
+            ip = candidate
+        end
+    end
     if ip and #ip > 0 then
         voltic.cache.set("ip:local", ip, CACHE_TTL)
         return ip
